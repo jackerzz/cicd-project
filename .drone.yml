@@ -1,0 +1,8 @@
+pipeline:
+  backend:
+    image: golang
+    commands:
+      - go mod init cicd
+      - go get
+      - go build .
+      - go test
